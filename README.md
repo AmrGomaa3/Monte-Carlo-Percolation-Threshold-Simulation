@@ -1,4 +1,4 @@
-# Monte-Carlo-Percolation-Threshold-Simulation
+# Monte Carlo Percolation Threshold-Simulation
 ---
 This project estimates the percolation threshold on an n × n grid using a Monte Carlo simulation powered by the Union-Find data structure.
 ---
@@ -45,9 +45,11 @@ Elapsed time = 4.1271534 seconds
 ```
 ---
 ## Notes
-- For large number of trials, do not use the `-show` flag to avoid perfromance drops
-- When using `show` it is best to pipe it into `less` for visual clarity
+- For large number of trials, do not use the `-show` flag to avoid perfromance degradations
+- If using `-show`, pipe the output for easier viewing:
 Example:
 ```bash
-java PercolationSimulator 100 10000 -show | less
+java PercolationSimulator 10 1 -show | less
 ```
+---
+See the [LICENSE](./LICENSE) file for license information.
